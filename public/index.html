@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React + Webpack</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script defer="defer">
+      <% /*
+      The following line is a workaround for scripts that insert .js code into the generated .html file.
+      Because this is set here, "inject: false" is set in webpack-config.js in plugins.HtmlWebpackPlugin
+      */ %>
+      <%= compilation.assets[webpackConfig.output.filename].source() %>
+    </script>
+  </body>
+</html>

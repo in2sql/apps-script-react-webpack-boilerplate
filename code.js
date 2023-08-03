@@ -12,7 +12,7 @@ function onInstall(e) {
   onOpen(e);
 }
 function showSidebar() {
-  var ui = HtmlService.createTemplateFromFile("dist/ui/index")
+  var ui = HtmlService.createTemplateFromFile("dist/index")
     .evaluate()
     .setTitle("React + Webpack");
   SpreadsheetApp.getUi().showSidebar(ui);
