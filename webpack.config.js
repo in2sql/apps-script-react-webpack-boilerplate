@@ -1,6 +1,6 @@
 const path = require("path");
 const { merge } = require("webpack-merge");
-const { loadCss } = require("./webpack.parts");
+const { loadCss, loadSvg } = require("./webpack.parts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (...args) => {
@@ -38,5 +38,6 @@ module.exports = (...args) => {
     },
 
     loadCss(),
+    loadSvg(),
   ]);
 };

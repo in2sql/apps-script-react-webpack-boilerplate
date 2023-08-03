@@ -40,12 +40,12 @@ exports.loadSvg = () => ({
               ref: true,
             },
           },
-          {
-            loader: "file-loader",
-            options: {
-              name: "static/media/[name].[hash].[ext]",
-            },
-          },
+          // {
+          //   loader: "file-loader",
+          //   options: {
+          //     name: "static/media/[name].[hash].[ext]",
+          //   },
+          // },
         ],
         issuer: {
           and: [/\.(ts|tsx|js|jsx|md|mdx)$/],

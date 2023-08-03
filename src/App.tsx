@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.scss";
+import ReactLogo from "./react.svg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,6 +8,12 @@ function App() {
   return (
     <div className="App">
       <h1>Webpack + React</h1>
+      <div>
+        <a href="https://reactjs.org" target="_blank">
+          <ReactLogo />
+          {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
+        </a>
+      </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
