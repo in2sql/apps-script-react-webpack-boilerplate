@@ -1,0 +1,32 @@
+{
+  "name": "apps-script-react-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
+    "@types/google-apps-script": "^1.0.66",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "clasp": "^1.0.0",
+    "css-loader": "^6.8.1",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
