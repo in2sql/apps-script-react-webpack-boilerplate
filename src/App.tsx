@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "./App.scss";
 import ReactLogo from "./react.svg";
+import clsx from "clsx";
+
+import s from "./App.module.scss";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className={clsx("App", s.app)}>
       <h1>Webpack + React</h1>
       <div>
         <a href="https://reactjs.org" target="_blank">
